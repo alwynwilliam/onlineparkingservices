@@ -1,0 +1,203 @@
+/* navbar */
+
+
+.bg-color{
+    background-color: rgb(92, 92, 161);
+    
+}
+
+.color{
+    color: azure;
+    font-size: large;
+}
+
+.titlecolor{
+    color: rgb(230, 253, 124);
+}
+
+.titlecolor:hover{
+    color: rgb(230, 253, 124);
+    cursor: default;
+}
+
+
+
+
+/* button book tickets */
+.btns{
+    
+    text-decoration: none;
+    padding: 1px;
+    background-color: rgba(56, 0, 0, 0.87);
+    border-radius: 2px;
+    margin-left : 35%;
+    margin-right : 30%;
+    cursor: default;
+    color: azure;
+    align-items: center;
+    
+}
+    
+.btns:hover{
+    color:rgb(230, 170, 122)
+}
+
+.font{
+    color: rgb(254, 255, 255);
+    font-size: 50px;
+    text-decoration:solid;
+  
+
+}
+
+/* -------home page----------- */
+
+/* home page title */
+
+.space4u{
+    font-size: 50px;
+    color: rgb(0, 30, 87);
+    text-decoration: underline;
+}
+
+
+
+
+/* recommonded places */
+
+.recomnd{
+    font-size: 30px;
+    text-decoration: underline;
+    color: darkblue;
+}
+ 
+.cardtitle{
+    font-size: 20px;
+   
+}
+
+
+
+/* hero section start */
+.hero-section{
+    height: calc(100vh - 56px);
+}
+/* hero section end */
+
+
+/* scrolling */
+.overflow-x-scroll{
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+/* ---------- location -----------*/
+
+/* background colour */
+.bg-location{
+    background-image: url(img_blue.jpg);
+    background-size: cover;
+}
+
+.location{
+    font-size: 30px;
+   
+    color: rgb(253, 254, 255);
+}
+
+.cities{
+    color: rgb(253, 225, 131);
+   
+}
+.ensure{
+    font-family: 'Poor Story', cursive;
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+}
+
+.titles{
+    font-family: 'Poor Story', cursive;
+
+    font-family: 'Roboto Slab', serif;
+
+    color: rgb(5, 51, 119);
+
+    
+}
+
+.btn-select{
+    color: rgb(255, 255, 255);
+    background-color: rgba(2, 102, 253, 0.822);
+   
+}
+
+
+
+.cs{
+    background-image: url(img23.jpg);
+    background-size: cover;
+    
+}
+
+
+
+/* about */
+
+.bg-about{
+    background-image: url(img_about.jpg);
+    background-size: cover;
+}
+
+.about{
+    color: aliceblue;
+    justify-content: center;
+    font-size: 20px;
+    
+}
+
+/* time */
+
+.bg-time{
+    background-image: url(img_time.jpg);
+    background-size: cover;
+}
+
+.btn-time{
+    background-color: rgb(238, 251, 253);
+    color: green;
+    font-size: 19px;
+    
+
+}
+
+.btn-time:hover{
+    background-color: rgb(133, 51, 51);
+
+}
+.title-time{
+    color: rgb(0, 70, 70);
+}
+
+.bg-day{
+    background-image: url(img_clk.jpg);
+    
+}
+.day{
+    color: white;
+}
+.card-col{
+    background-image: url(img_white.jpg);
+}
+
+/* slot */
+.slot{
+    font-size: 30px;
+}
+.bg-slot{
+    background-image: url(img_slot.jpg);
+    background-size: cover;
+}
+.bg-booking{
+    background-image: url(img_booking.jpg);
+    background-size: cover;
+}
