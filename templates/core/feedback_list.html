@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block content %}
+<body class="bg-feedback">
+<section class="py-5 bg-image-about">
+  <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center poppins">Reviews</h1>
+            <hr>
+        </div>
+        <div class="col text-end">
+          <a href="{% url 'core:feedback_create'%}"><button class="btn btn-success fst-italic roboto" type="button">Add Your Review</button></a>
+        </div>
+    </div>
+    {% for feedback in feedbacks %}
+    <div class="row">
+      <div class="col">
+        <div class="card bg-feedcard">
+          <h3 class="card-header bg-times bg-feedname">{{feedback.name}}</h3>
+          <div class="card-body">
+            <p class="card-text text-muted fst-italic">{{feedback.updated_on|date}}</p>
+            <p class="card-text"><h5>{{feedback.message}}</h5></p>
+            <div class="d-flex justify-content-evenly">
+            <button class="btn btn-info"><i class="fa-regular fa-thumbs-up"></i> </button>
+            <button class="btn btn-danger"><i class="fa-regular fa-thumbs-down"></i> </button>
+            </div>
+          </div>
+        </div>
+        <br>
+        {% empty %}
+        <p class="card-text">No feedbacks!</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+{% endblock content %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+    <div class="card ">
+        <div class="card-header text-center"><h3> Profile </h3>
+         
+        </div>
+        <div class="card-body">
+          
+          <p class="card-text"><h4>Name :</h4></p>
+          <p class="card-text"><h4>Mobile number :</h4></p>
+          <p class="card-text"><h4>Email id :</h4></p>
+          
+        </div>
+        
+      </div><br><br>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card ">
+            <div class="card-body">
+              <h5 class="card-title">Edit Profile or View Profile </h5>
+              
+              <a href="{% url 'core:profile_edit' %}" class="btn btn-primary ">Edit Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">View My Activity</h5>
+              
+              <a href="{% url 'core:my_activity' %}" class="btn btn-primary">My Activity</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+
+
+{% endblock content %}
