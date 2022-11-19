@@ -1,4 +1,4 @@
-/* navbar */
+/*--------------------------- navbar ----------------------------------------------------*/
 
 
 .bg-color{
@@ -25,7 +25,7 @@
 
 
 
-/* button book tickets */
+/* -------------------button book tickets----------------- */
 .btns{
     
     text-decoration: none;
@@ -52,7 +52,7 @@
 
 }
 
-/* -------home page----------- */
+/* -------------------------------home page------------------------------------------------ */
 
 /* home page title */
 
@@ -65,7 +65,7 @@
 .space4u{
     font-size: 50px;
     color: rgb(0, 30, 87);
-    text-decoration: underline;
+    
 }
 
 
@@ -105,7 +105,7 @@
     overflow-x: scroll;
 }
 
-/* ---------- location -----------*/
+/* ------------------------------------------ location ----------------------------------------------*/
 
 /* background colour */
 .bg-location{
@@ -153,9 +153,29 @@
     
 }
 
+.bg-destination{
+    background-image: url(img_card3.jpg);
+   ;
+}
+
+.underline{
+    text-decoration: none;
+}
 
 
-/* about */
+.destination{
+    color: rgb(14, 13, 13);
+}
+
+.text{
+    color: rgba(0, 1, 68, 0.788);
+}
+
+.bg-des{
+    background-image: url(img77.jpg);
+    background-size: cover;
+}
+/* -----------------------------about--------------------------------------------------------------- */
 
 .bg-about{
     background-image: url(img23.jpg);
@@ -170,7 +190,7 @@
     
 }
 
-/* time */
+/*------------------------------------------------- time------------------------------------------------- */
 
 .bg-time{
     background-image: url(img_time.jpg);
@@ -190,7 +210,7 @@
 
 }
 .title-time{
-    color: rgb(0, 70, 70);
+    color: rgb(232, 255, 255);
 }
 
 .bg-day{
@@ -204,9 +224,17 @@
     background-image: url(img_white.jpg);
 }
 
-/* slot */
+.bg-day{
+    background-image: url(img_day.jpg);
+    background-size: cover;
+}
+
+.size{
+    font-size: 35px;
+}
+/*---------------------------------------------- slot ----------------------------------------------*/
 .slot{
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .bg-booking{
@@ -221,7 +249,7 @@
     
 }
 
-/* footer */
+/* ------------footer-------------------------*/
 
 .footer{
     background-color: rgba(92, 92, 161, 0.603);
@@ -229,7 +257,7 @@
 
 }
 
-/* feedback */
+/* -----------------------------feedback-------------------------------------------------------------- */
 
 .bg-feedcard{
     background-image: url(img_name.png);
@@ -258,11 +286,57 @@
 }
 
 
+/*----------------------------------------------profile----------------------------------------------- */
+
+.bg-profile{
+    background-image: url(img33.jpg);
+    background-size: cover;
+}
+
+.bg-profiles{
+    background-color: rgb(69, 69, 124);
+    
+}
+
+.bg-profilecard{
+    background-image: url(img32.jpg);
+    background-size: cover;
+}
+
+/*-------------- payment---------------- */
+
+.bg-payment{
+    background-image: url(img_payment.jpg);
+    background-size: cover;
+}
+
+/*--------- login---------------- */
 
 
+.bg-login{
+    background-image: url(img40.jpg);
+    background-size: cover;
+}
 
+.padding{
+    padding: 3px;
+    margin: 1px;
+}
 
+.bg-pro{
+    background-image: url(img_profile.jpg);
+    background-size: cover;
+}
 
+/* ---------------profile---------------------------- */
 
-
-
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fbc2eb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(194, 238, 251), rgba(166, 193, 238, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(122, 144, 156), rgba(166, 193, 238, 1))
+    }

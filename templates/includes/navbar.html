@@ -20,34 +20,71 @@
         <li class="nav-item">
           <a class="nav-link color" href="{% url 'core:about' %}">About us</a>
         </li>
-
+        {% if user.profilemodel %} 
+        
         <li class="nav-item">
-          <a class="nav-link color" href="{% url 'core:profile' %}">Profile</a>
+          <a class="nav-link color" href="{% url 'user:profile_detail' user.profilemodel.id %}">Profile</a>
         </li>
+        {% else %}             
+        <li class="nav-item">
+          <a class="nav-link color" href="{% url 'user:profile_create' %}">Profile</a>
+        </li>
+        {% endif %}
+       
 
         <li class="nav-item">
           <a class="nav-link color" href="{% url 'core:feedback_list' %}">Review</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link color" href="{% url 'core:location' %}">Location</a>
+          <a class="nav-link color" href="{% url 'core:location_list' %}">Location</a>
         </li>
 
         
-        <li class="nav-item">
-          <a class="nav-link color" href="{% url 'core:time' %}">Time Interval</a>
-        </li>
 
         <li class="nav-item">
-          <a class="nav-link color" href="{% url 'core:booking' %}">Booking</a>
+          <a class="nav-link color" href="{% url 'core:booking_create' %}">Booking</a>
         </li>
+
+
+       <li>
+        {% if user.is_authenticated %} 
+        {% if user.profilemodel %} 
+        
+        <a href="{% url 'user:profile_detail' user.profilemodel.id %}" class="btn btn-success text-light text-uppercase">
+          {{user}}
+        </a> 
+        {% else %}             
+        <a href="{% url 'user:profile_create' %}" class="btn btn-success text-light text-uppercase">
+          {{user}}
+        </a>
+        {% endif %}
+        {% else %}             
+        <a href="{% url 'user:user_signup' %}" class="btn btn-primary ms-2 me-2">
+          Sign Up
+        </a>
+        {% endif %}
+      </li>
+      {% if user.is_authenticated %}
+      <li class="nav-item me-3">
+        <a href="{% url 'user:user_logout' %}" class="btn btn-danger ms-2 me-2">Signout</a>
+        {% else %}
+        <a href="{% url 'user:user_login' %}" class="btn btn-success ms-2 me-2">
+          Sign In
+        </a>
+      {% endif %}
+       </li>
+
+       
+        
       </ul>
-      <form class="d-flex" role="search">
+      <form action="{% url 'core:destination_search' %}" class="d-flex" role="search">
         <input
           class="form-control me-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
+          name="q"
         />
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>

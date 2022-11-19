@@ -8,12 +8,29 @@ app_name = "core"
 urlpatterns=[
      path("", views.HomeView.as_view(), name="home"),
      path("about/", views.AboutView.as_view(), name="about"),
-     path("location/", views.LocationView.as_view(), name="location"),
-     path("time/", views.TimeView.as_view(), name="time"),
-     path("booking/", views.BookingView.as_view(), name="booking"),
+
+     # Feedback
      path("feedback_create/", views.FeedbackCreateView.as_view(), name="feedback_create"),
      path("feedback_list/", views.FeedbackListView.as_view(), name="feedback_list"),
-     path("profile/", views.ProfileView.as_view(), name="profile"),
-     path("profile_edit/", views.ProfileEditView.as_view(), name="profile_edit"),
+
+     # Location
+     path("location/list/", views.LocationListView.as_view(), name="location_list"),
+
+     # Booking
+     path("booking/create/", views.BookingCreateView.as_view(), name="booking_create"),
+     path("booking/list/", views.BookingListView.as_view(), name="booking_list"),
+     path("booking/<int:pk>/detail/", views.BookingDetailView.as_view(), name="booking_detail"),
+     path("booking/<int:pk>/update/", views.BookingUpdateView.as_view(), name="booking_update"),
+     path("booking/<int:pk>/delete/", views.BookingDeleteView.as_view(), name="booking_delete"),
+
+     #vehicle
+    path("vehicle/create/", views.VehicleCreateView.as_view(), name="vehicle_create"),
+
+     # Destination
+     path("destination/list/",views.DestinationListView.as_view(), name="destination_list"),
+     path("destination/location/<int:pk>/list/",views.DestinationByLocationView.as_view(),name="destination_by_location"),
+     path("destination/search/",views.DestinationSearchView.as_view(),name="destination_search"),
+
+     
     
 ]

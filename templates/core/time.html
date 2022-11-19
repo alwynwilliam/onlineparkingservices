@@ -1,129 +1,43 @@
 {% extends 'base.html' %}
 {% block content %}
-<body  class="bg-time">
+<body  class="bg-location">
 <section>
     <div class="container">
         <div class="row">
-            <h2 class="text-center title-time">Select your Date & Time</h2>
+            <h2 class="text-center title-time">Select your Time</h2>
             <hr>
             <div class="col">
                 <div class="d-flex justify-content-around">
 
                 
-                <button type="button" class="btn  btn-time"><b>08:00 Am - 09:00 Am</b></button>
-                <button type="button" class="btn  btn-time"><b>09:00 Am - 10:00 Am</b></button>
-                <button type="button" class="btn  btn-time"><b>11:00 Am - 12:00 Pm</b></button>
-                <button type="button" class="btn  btn-time"><b>12:00 Pm - 01:00 Pm</b></button>
+                <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>08:00 Am - 09:00 Am</b></button></a>
+                <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>09:00 Am - 10:00 Am</b></button></a>
+                <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>11:00 Am - 12:00 Pm</b></button></a>
+                <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>12:00 Pm - 01:00 Pm</b></button></a>
                 </div><br><br>
 
                 <div class="d-flex justify-content-around">
-                <button type="button" class="btn  btn-time"><b>01:00 PM - 02:00 Pm</b></button>
-                <button type="button" class="btn  btn-time"><b>02:00 PM - 03:00 Pm</b></button>
-                <button type="button" class="btn  btn-time"><b>03:00 PM - 04:00 Pm</b></button>
-                <button type="button" class="btn  btn-time"><b>04:00 PM - 05:00 Pm</b></button>
+                <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>01:00 Pm - 02:00 Pm</b></button></a>
+                <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>02:00 Pm - 03:00 Pm</b></button></a>
+                <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>03:00 Pm - 04:00 Pm</b></button></a>
+                <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>04:00 Pm - 05:00 Pm</b></button></a>
                 </div><br><br>
 
                 <div class="d-flex justify-content-around">
-                    <button type="button" class="btn  btn-time"><b>05:00 PM - 06:00 Pm</b></button>
-                    <button type="button" class="btn  btn-time"><b>06:00 PM - 07:00 Pm</b></button>
-                    <button type="button" class="btn  btn-time"><b>07:00 PM - 08:00 Pm</b></button>
-                    <button type="button" class="btn  btn-time"><b>08:00 PM - 09:00 Pm</b></button>
+                    <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>05:00 Pm - 06:00 Pm</b></button></a>
+                    <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>06:00 Pm - 07:00 Pm</b></button></a>
+                    <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>07:00 Pm - 08:00 Pm</b></button></a>
+                    <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>08:00 Pm - 09:00 Pm</b></button></a>
                 </div><br><br>
 
                 <div class="d-flex justify-content-around">
-                    <button type="button" class="btn  btn-time"><b>09:00 PM - 10:00 Pm</b></button>
-                    <button type="button" class="btn  btn-time"><b>10:00 PM - 11:00 Pm</b></button>
-                    <button type="button" class="btn  btn-time"><b>11:00 PM - 12:00 Am</b></button>
-                    <button type="button" class="btn  btn-time"><b>12:00 PM - 01:00 Am</b></button>
+                    <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>09:00 Pm - 10:00 Pm</b></button></a>
+                    <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>10:00 Pm - 11:00 Pm</b></button></a>
+                    <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>11:00 Pm - 12:00 Am</b></button></a>
+                    <a href="{% url 'core:booking' %}"><button type="button" class="btn  btn-time"><b>12:00 Pm - 01:00 Am</b></button></a>
                 </div><br><br><br><br>
 
-
-                <div class="text-center bg-time">
-                    <button class="btn btn-success pb-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><h3>SELECT YOUR DATE</h3></button>
-
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header bg-time">
-    <h2 class="offcanvas-title day" id="offcanvasRightLabel"><strong>DATE</strong></h2>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body bg-time ">
-    <div class="card card-col">
-  <div class="card-header">
-    2022
-  </div>
-  <div class="card-body">
-    
-    <button  class="btn btn-primary">November 1</buuton>
-    <p class="card-text">Tuesday</p>
-  </div>
-
-  <div class="card card-col">
-    <div class="card-header">
-      2022
-    </div>
-    <div class="card-body">
-      
-      <button  class="btn btn-primary">November 2</buuton>
-      <p class="card-text">Wednesday</p>
-    </div>
-
-    <div class="card card-col">
-        <div class="card-header">
-          2022
-        </div>
-        <div class="card-body">
-          
-          <button  class="btn btn-primary">November 3</buuton>
-          <p class="card-text">Thursday</p>
-        </div>
-
-    <div class="card card-col">
-        <div class="card-header">
-              2022
-        </div>
-        <div class="card-body">
-              
-              <button  class="btn btn-primary">November 4</buuton>
-              <p class="card-text">Friday</p>
-        </div>    
-    
-        <div class="card card-col">
-            <div class="card-header">
-                  2022
-            </div>
-            <div class="card-body">
-                  
-                  <button  class="btn btn-primary">November 5</buuton>
-                  <p class="card-text">Saturday</p>
-            </div> 
-
-            <div class="card card-col">
-                <div class="card-header">
-                      2022
-                </div>
-                <div class="card-body">
                       
-                      <button  class="btn btn-primary">November 6</buuton>
-                      <p class="card-text">Sunday</p>
-                </div>    
-            
-</div>
-
-   
-  </div>
-</div>
-                    
-                </div>
-
-
-
-            
-
-
-
-               
-        </div>
-    </div>
 </section>
 </body><br>
 {% endblock content %}

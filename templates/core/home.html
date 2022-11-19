@@ -52,7 +52,7 @@
         </div>
         
         <div>
-          <button class="font btns text-center"> Book Tickets </button>
+          <a href="{% url 'core:location_list' %}"><button class="font btns text-center"> Book Tickets </button></a>
         </div><br>
         <div>
           <p class="h1 recomnd">  
@@ -63,24 +63,24 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="media/default/img_stadium.jpg" class="card-img-top" height="200px" alt="">
+              <img src="{{place.image.url}}" class="card-img-top" height="200px" alt="">
               <div class="card-body bg-cardhome">
-                <h5 class="card-title"><strong>Kaloor stadium</strong></h5>
-                <p class="card-text">Location : Edappally,Ernakulam</p>
+                <h5 class="card-title"><strong></strong></h5>
+                <p class="card-text">Location : </p>
                 <p class="card-text"><i>Hey!Ensure your tickets now</i></p>
-                <button class="btn btn-primary">Book Tickets</button>
+                <a href="#"><button class="btn btn-primary">Book Tickets</button></a>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <!-- <div class="col">
             <div class="card h-100">
               <img src="media/default/img_csm2.jpg" class="card-img-top" height="200px" alt="">
               <div class="card-body bg-cardhome">
                 <h5 class="card-title"><strong>Center Square Mall</strong> </h5>
                 <p class="card-text">Location : Maharajas,Ernakulam</p>
                 <p class="card-text"><i>Hey!Ensure your tickets now</i></p>
-                <button class="btn btn-primary">Book Tickets</button>
+                <a href="#' %}"><button class="btn btn-primary">Book Tickets</button></a>
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@
                 <h5 class="card-title"><strong>Oberon Mall</strong> </h5>
                 <p class="card-text">Location : Edappally,Ernakulam</p>
                 <p class="card-text"><i>Hey!Ensure your tickets now</i></p>
-                <button class="btn btn-primary">Book Tickets</button>
+                <a href="#"><button class="btn btn-primary">Book Tickets</button></a>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@
                 <h5 class="card-title"><strong> Lulu Mall</strong> </h5>
                 <p class="card-text">Location : Edappally,Ernakulam </p>
                 <p class="card-text"><i>Hey!Ensure your tickets now</i></p>
-                <button class="btn btn-primary">Book Tickets</button>
+                <a href="#"><button class="btn btn-primary">Book Tickets</button></a>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@
                 <h5 class="card-title"><strong>Marine Drive</strong> </h5>
                 <p class="card-text">Location : Maharajas,Ernakulam </p>
                 <p class="card-text"><i>Hey!Ensure your tickets now</i></p>
-                <button class="btn btn-primary">Book Tickets</button>
+                <a href="#"><button class="btn btn-primary">Book Tickets</button></a>
               </div>
             </div>
           </div>
@@ -128,14 +128,14 @@
                 <h5 class="card-title"><strong>Subash Park</strong> </h5>
                 <p class="card-text">Location : Maharajas,Ernakulam </p>
                 <p class="card-text"><i>Hey!Ensure your tickets now</i></p>
-                <button class="btn btn-primary">Book Tickets</button>
+                <a href="#"><button class="btn btn-primary">Book Tickets</button></a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       </div>
 </section>
 </body><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-{% endblock content%}
+{% endblock content %}

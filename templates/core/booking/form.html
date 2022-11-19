@@ -1,0 +1,72 @@
+{% extends 'base.html' %} {% block content %}
+<section class="vh-100 d-flex ">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row">
+      <div class="col">
+        <h1>Book Your Slot Here</h1>
+        <hr />
+        <div class="card">
+          <div class="card-body">
+            <form action="" method="post">
+              {% csrf_token %} {{form.as_p}}
+              <!-- Button trigger modal -->
+              <button class="btn btn-primary" type="submit">Book My Slot</button>
+            </form>
+          </div>
+          <div class="card-footer">
+            <!-- Modal add vehicle -->
+            <button 
+              type="button"
+              class=" link-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Add new vehicle?
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Tell Us About Your Vehicle
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form method="post">
+                      {% csrf_token %} {{vehicle_form.as_p}}
+                      <button
+                        formaction="{% url 'core:vehicle_create' %}"
+                        type="submit"
+                        class="btn btn-primary"
+                      >
+                        Add
+                      </button>
+                    </form>
+                  </div>
+                  <div class="modal-footer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

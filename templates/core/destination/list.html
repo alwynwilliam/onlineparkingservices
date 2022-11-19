@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+<body class="bg-des">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    {% for destination in destinations %}
+ 
+    <a href="#" class="underline">
+      <div class="card">
+        <div class="card-body bg-cardhome">
+          <img src="{{destination.image.url}}" class="card-img-top" height="200px" alt="">
+          <h5 class="card-title destination"><strong>{{destination.name}}</strong></h5>
+          <p class="card-text text"><i>{{destination.description}}</i></p>
+          <p class="card-text destination">Location : {{destination.location.name}}</p>
+          <p class="destination"><i>Hey!Ensure your tickets now</i></p>
+        </div>
+       
+      </div></a>
+    
+    {% empty %}
+    <div class="col">
+      <p>no destinations!</p>
+    </div>
+    {% endfor %}
+  </div>
+</body><br>
+
+{% endblock content %}

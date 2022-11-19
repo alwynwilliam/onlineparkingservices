@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<body class="bg-location">
+  <div class="container">
+    <div class="row">
+      <table>
+        <tbody>
+          <tr>
+            <td><strong class="location">
+                <h1>Location</h1>
+              </strong></td>
+            <td>
+              <form class="d-flex" role="search">
+                <input class="form-control ms-5 me-2" type="search" placeholder="Search your city"
+                  aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="col">
+        <p>
+        <h1 class="cities">Popular Cities</h1>
+        </p>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        {% for location in locations %}
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body cs">
+              <h3 class="card-title text-center titles">{{location.name}}</h3>
+              <p class="card-text text-center"><i>Ensure your </i>SPACE <i>now!</i></p>
+              <div class="text-center">
+                <a href="{% url 'core:destination_by_location' location.id %}"><button class="btn btn-primary">Select</button></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        {% empty %}
+        <div class="col">
+          <p>no locations</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</body>
+<br>
+
+
+
+
+
+                       
+
+
+{% endblock content %}

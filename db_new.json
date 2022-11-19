@@ -1,0 +1,600 @@
+[
+    {
+        "fields": {
+            "file": "destination/image/img_lulu2.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                2
+            ],
+            "location": null,
+            "name": "Lulu Mall",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_rp.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                3
+            ],
+            "location": null,
+            "name": "RP Mall",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_travancore.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                4
+            ],
+            "location": null,
+            "name": "Mall of Travancore",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_csm2.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                5
+            ],
+            "location": null,
+            "name": "Center Square Mall",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_oberon.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                6
+            ],
+            "location": null,
+            "name": "Oberon Mall",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_marine1.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                7
+            ],
+            "location": null,
+            "name": "Marine Drive",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_park1.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                8
+            ],
+            "location": null,
+            "name": "Subash Park",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_stadium.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                9
+            ],
+            "location": null,
+            "name": "Kaloor Stadium",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_lighthouse.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                10
+            ],
+            "location": null,
+            "name": "Light House",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_eagle.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                11
+            ],
+            "location": null,
+            "name": "Eagle Rock Statue",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_ravis.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                12
+            ],
+            "location": null,
+            "name": "Hotel Raviz",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_beach.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                13
+            ],
+            "location": null,
+            "name": "Mahatama Gandhi Beach",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_british.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                14
+            ],
+            "location": null,
+            "name": "British Cottage",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "file": "destination/image/tvm_museum.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                15
+            ],
+            "location": null,
+            "name": "Trivandrum Museum",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "file": "destination/image/tvm_napeir.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                16
+            ],
+            "location": null,
+            "name": "Museum  Napeir",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "file": "destination/image/tvm_lotus.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                17
+            ],
+            "location": null,
+            "name": "Lotus Temple",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "file": "destination/image/pala_lake.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                18
+            ],
+            "location": null,
+            "name": "Palakkad cottage",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "file": "destination/image/pala_temple.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                19
+            ],
+            "location": null,
+            "name": "Ancient Temple",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_pinnacle.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                20
+            ],
+            "location": null,
+            "name": "Pinnacle View Point",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "file": "destination/image/kotta.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                21
+            ],
+            "location": null,
+            "name": "I Mall",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "file": "destination/image/kotta_kathakali.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                22
+            ],
+            "location": null,
+            "name": "Kathakali Museum",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "file": "destination/image/img_revathy.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                23
+            ],
+            "location": null,
+            "name": "Revathy Cinemax",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "file": "destination/image/chennai_plaza.jpg"
+        },
+        "model": "core.imagemodel",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "created_on": "2022-11-10T13:11:13.755Z",
+            "description": "No description..",
+            "image": [
+                24
+            ],
+            "location": null,
+            "name": "Spencer Plaza",
+            "slots": [
+                1
+            ],
+            "status": true,
+            "updated_on": "2022-11-10T13:11:13.755Z",
+            "user": 1
+        },
+        "model": "core.destinationmodel",
+        "pk": 24
+    }
+]
