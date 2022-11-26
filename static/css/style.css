@@ -330,6 +330,20 @@
 
 /* ---------------profile---------------------------- */
 
+
+/* booking */
+
+.booking{
+    background-image: url(img_name.png);
+    background-size: cover;
+}
+
+.bookingdetails{
+    background-image: url(img26.jpg);
+    background-size: cover;
+
+}
+
 .gradient-custom-2 {
     /* fallback for old browsers */
     background: #fbc2eb;
@@ -339,4 +353,8 @@
     
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to right, rgb(122, 144, 156), rgba(166, 193, 238, 1))
+    }
+
+    .readonly{
+        pointer-events: none;
     }

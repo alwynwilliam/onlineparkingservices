@@ -15,9 +15,9 @@
               {% if user.profilemodel %}
               <div class="text-center">
                 <a href="{% url 'user:profile_update' user.profilemodel.id %}" class="day">
-                  <button type="button" class="btn btn-primary padding" data-mdb-ripple-color="dark" style="z-index: 1">
-                Edit profile</a>
-              </button>
+                  <button type="button" class="btn btn-success padding" data-mdb-ripple-color="dark" style="z-index: 1">
+                Edit profile
+              </button></a>
             </div  enctype="multipart/form-data">
               <img id="profileImage" src="{{user.profilemodel.image.url}}" alt="Generic placeholder image"
                 class="img-fluid img-thumbnail mt-4 mb-2" height="50px">

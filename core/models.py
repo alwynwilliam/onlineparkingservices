@@ -77,6 +77,7 @@ class VehicleModel(models.Model):
 class SlotModel(models.Model):
     filled = models.BooleanField(default=False)
     vehicle_type = models.ForeignKey(VehicleTypeModel, on_delete=models.CASCADE)
+    amount = models.FloatField(default=0.0)
 
     def __str__(self):
         availability = "Avaible" if not self.filled else "Not Available"
@@ -130,9 +131,9 @@ class BookingModel(TimeStamp, models.Model):
             slot.filled = True
 
 # Payment Model
-class PaymentModel(models.Model):
-    booking = models.ForeignKey(BookingModel, on_delete=models.SET_DEFAULT, default=None)
-    amount = models.FloatField()
+class PaymentModel(TimeStamp, models.Model):
+    booking = models.OneToOneField(BookingModel, on_delete=models.SET_DEFAULT, default=None)
+    amount = models.FloatField(default=0.0)
     ispaid = models.BooleanField(default=False)
     payment_id = models.CharField(max_length=256)
     payment_method = models.CharField(max_length=64)

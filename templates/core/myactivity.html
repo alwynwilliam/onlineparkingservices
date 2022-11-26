@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+<section class="bookingdetails">
+    <div class="container">
+        <div class="row">
+           
+            {% for booking in bookings %}
+            <div class="row row-cols-1 row-cols-md-1 g-4">
+                <div class="col">
+                  <div class="card text-center">
+                   
+                    <div class="card-body booking">
+                        <p class="card-text">Vehicle number : <strong>{{booking.vehicle}}</strong></p>
+                        <p class="card-text">Arrival date and time : {{booking.arrival_date}}</p>
+                        <p class="card-text">Departure date and time : {{booking.departure_date}}</p>
+                        <p class="card-text"><h4>Destination : {{booking.destination}}</h4></p>
+                       
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+        {% empty %}
+        <div class="col">
+          <p>no bookings</p>
+        </div>
+        {% endfor %}
+
+    </div>
+</section><br>
+
+{% endblock content %}

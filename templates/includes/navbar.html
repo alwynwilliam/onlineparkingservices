@@ -20,16 +20,12 @@
         <li class="nav-item">
           <a class="nav-link color" href="{% url 'core:about' %}">About us</a>
         </li>
-        {% if user.profilemodel %} 
+        
         
         <li class="nav-item">
-          <a class="nav-link color" href="{% url 'user:profile_detail' user.profilemodel.id %}">Profile</a>
+          <a class="nav-link color" href="{% url 'core:my_activity'  %}">Profile</a>
         </li>
-        {% else %}             
-        <li class="nav-item">
-          <a class="nav-link color" href="{% url 'user:profile_create' %}">Profile</a>
-        </li>
-        {% endif %}
+        
        
 
         <li class="nav-item">
@@ -43,7 +39,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link color" href="{% url 'core:booking_create' %}">Booking</a>
+          <a class="nav-link color" href="{% url 'core:booking_list' %}">Booking</a>
         </li>
 
 

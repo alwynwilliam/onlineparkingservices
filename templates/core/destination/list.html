@@ -3,10 +3,13 @@
   <div class="row row-cols-1 row-cols-md-3 g-4">
     {% for destination in destinations %}
  
-    <a href="#" class="underline">
+    <a href="{% url 'core:booking_create' destination.id %}" class="underline">
       <div class="card">
+        {% for image in destination.image.all %}
+          <img src="{{image.file.url}}" class="card-img-top" height="200px" alt="">
+          {% endfor %}
         <div class="card-body bg-cardhome">
-          <img src="{{destination.image.url}}" class="card-img-top" height="200px" alt="">
+          
           <h5 class="card-title destination"><strong>{{destination.name}}</strong></h5>
           <p class="card-text text"><i>{{destination.description}}</i></p>
           <p class="card-text destination">Location : {{destination.location.name}}</p>
