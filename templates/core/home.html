@@ -1,6 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-
-<section class="hero-section" style="min-height:100vh;">
+<section class="hero-section " >
   <div
     id="carouselExampleControls"
     class="carousel slide h-100"
@@ -38,11 +37,10 @@
   </div>
 </section>
 
-<section class="vh-100 bg-home">
-  <div class="container h-100 py-2">
+<section class="bg-home" >
+  <div class="container py-2">
     <div class="row">
-      
-        <div >
+        <div>
           <div >
             <h5 class="space4u text-center">SPACE 4 U</h5>
             <p class="text-center">
@@ -59,14 +57,36 @@
             Recommended places
           </p>
         </div>
-        
+      </section>
 
-        
-
-        </div>
-      </div>
+        <section>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            {% for destination in destinations %}
+         
+            <a href="{% url 'core:booking_create' destination.id %}" class="underline">
+              <div class="card" style="height: 450px;">
+                {% for image in destination.image.all %}
+                  <img src="{{image.file.url}}" class="card-img-top" height="200px" alt="">
+                  {% endfor %}
+                <div class="card-body bg-cardhome">
+                  
+                  <h5 class="card-title destination"><strong>{{destination.name}}</strong></h5>
+                  <p class="card-text text"><i>{{destination.description}}</i></p>
+                  <p class="card-text destination">Location : {{destination.location.name}}</p>
+                  <p class="destination"><i>Hey!Ensure your tickets now</i></p>
+                </div>
+               
+              </div></a>
+            
+            {% empty %}
+            <div class="col">
+              <p>no destinations!</p>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
       
-</section>
-</body>
+      
+      
 
 {% endblock content %}

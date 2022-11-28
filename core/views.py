@@ -17,7 +17,7 @@ from core.forms import FeedbackForm
 
 class HomeView(views.TemplateView):
     template_name = "core/home.html"
-
+    extra_context = {"destinations": core_models.DestinationModel.objects.filter(status=True)}
 
 # about view
 class AboutView(views.TemplateView):
@@ -56,6 +56,8 @@ class DestinationListView(views.ListView):
     template_name = "core/destination/list.html"
     model = core_models.DestinationModel
     context_object_name = "destinations"
+
+
 
 
 class DestinationByLocationView(views.ListView):
@@ -134,6 +136,8 @@ class MyactivityListView(LoginRequiredMixin, views.ListView):
     template_name = "core/myactivity.html"
     model = core_models.BookingModel
     context_object_name = "bookings"
+
+
 
 
 class VehicleCreateView(LoginRequiredMixin, SuccessMessageMixin, views.CreateView):
