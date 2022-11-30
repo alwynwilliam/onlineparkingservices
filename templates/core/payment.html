@@ -14,11 +14,11 @@
               <thead></thead>
               <tbody>
                 <tr>
-                  <th>Order ID:</th>
-                  <td>{{razorpay_order_id}}</td>
+                  <th>Booking ID:</th>
+                  <td>{{razorpay_payment_id}}</td>
                 </tr>
                 <tr>
-                  <th>Order Amount:</th>
+                  <th>Booking Amount:</th>
                   <td>{{razorpay_currency}} {{razorpay_amount}}</td>
                   <input type="hidden" name="razorpay_amount" value="{{razorpay_amount}}">
                 </tr>
@@ -79,7 +79,6 @@
 
     prefill: {
       name: "{{user.profile.first_name}}",
-      email: "{{user.email}}",
       contact: "{{user.profile.phone_number}}",
     },
     notes: {

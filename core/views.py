@@ -2,10 +2,11 @@ import razorpay
 from django.conf import settings
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.contrib.messages.views import SuccessMessageMixin
-from django.db.models import F, Q
+from django.db.models import F, Q, Count
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views import generic as views
+
 
 from core import forms as core_forms
 from core import models as core_models
@@ -17,7 +18,14 @@ from core.forms import FeedbackForm
 
 class HomeView(views.TemplateView):
     template_name = "core/home.html"
-    extra_context = {"destinations": core_models.DestinationModel.objects.filter(status=True)}
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["destinations"] = core_models.DestinationModel.objects.filter(
+            status=True
+        ).order_by()
+        return context
+
 
 # about view
 class AboutView(views.TemplateView):
@@ -56,8 +64,6 @@ class DestinationListView(views.ListView):
     template_name = "core/destination/list.html"
     model = core_models.DestinationModel
     context_object_name = "destinations"
-
-
 
 
 class DestinationByLocationView(views.ListView):
@@ -138,8 +144,6 @@ class MyactivityListView(LoginRequiredMixin, views.ListView):
     context_object_name = "bookings"
 
 
-
-
 class VehicleCreateView(LoginRequiredMixin, SuccessMessageMixin, views.CreateView):
     template_name = "core/vehicle/form.html"
     form_class = core_forms.VehicleForm
@@ -185,7 +189,6 @@ class BookingPaymentView(LoginRequiredMixin, SuccessMessageMixin, views.View):
         return url
 
 
-
 class PaymentView(views.View):
     def get(self, request):
 
@@ -216,9 +219,8 @@ class PaymentHandler(views.View):
         order = client.order.create(data=data)
         context = {}
         context.update(order)
-        return render(request, self.template_name, context) 
+        return render(request, self.template_name, context)
 
-    
     def post(self, request, *args, **kwargs):
         try:
             # get the required parameters from post request.
@@ -242,7 +244,7 @@ class PaymentHandler(views.View):
 
             # verify the payment signature.
             result = self.RAZORPAY_CLIENT.utility.verify_payment_signature(params_dict)
-            print("#DEBUG: verifying the payment signature... Completed.") 
+            print("#DEBUG: verifying the payment signature... Completed.")
 
             if result is not None:
 
@@ -261,12 +263,11 @@ class PaymentHandler(views.View):
                     )
                     print("#DEBUG: Payment model created...")
 
-
                     # render success page on successful caputre of payment
                     return render(request, "core/paymentsuccess.html")
                 except Exception as e:
                     print("#DEBUG: there is an error while capturing payment...", e)
-                    
+
                     # if there is an error while capturing payment.
                     return render(request, "core/paymentfail.html")
             else:
@@ -276,12 +277,11 @@ class PaymentHandler(views.View):
         except Exception as e:
             print("#DEBUG: we don't find the required parameters in POST data", e)
             # if we don't find the required parameters in POST data
-            return redirect(reverse_lazy("core:payment_completed", kwargs={"pk":self.kwargs.get("pk")}))
-
-
-
-
-
+            return redirect(
+                reverse_lazy(
+                    "core:payment_completed", kwargs={"pk": self.kwargs.get("pk")}
+                )
+            )
 
 
 # # -----------------------location and destination------------------------------------
